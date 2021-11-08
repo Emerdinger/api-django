@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
-    'RecomendApp.apps.RecomendappConfig'
+    'RecomendApp.apps.RecomendappConfig',
+    'django-heroku'
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True
