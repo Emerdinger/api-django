@@ -67,7 +67,8 @@ def stem(text):
 
 def recommend(receta):
     recomend = []
-    receta_index = new_df[new_df['nombre'] == receta].index[0]
+    receta = int(receta)
+    receta_index = new_df[new_df['_id'] == receta].index[0]
     distances = similarity[receta_index]
     recetas_list = sorted(list(enumerate(distances)), reverse=True, key=lambda x: x[1])[1:6]
 
